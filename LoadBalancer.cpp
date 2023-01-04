@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool LoadBalancer::isEmpty() {
+bool LoadBalancer::is_empty() {
     return request_queue.empty();
 }
 
@@ -26,4 +26,12 @@ void LoadBalancer::handle_request(Request r, int t) {
     else {
         request_queue.push(r);
     }
+}
+
+void LoadBalancer::add_web_server(WebServer ws) {
+    server_list.push_back(ws);
+}
+
+LoadBalancer::LoadBalancer(int desiredCapacity) {
+    capacity = desiredCapacity;
 }

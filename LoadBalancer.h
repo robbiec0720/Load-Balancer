@@ -14,7 +14,9 @@ private:
     queue<Request> request_queue;
     vector<WebServer> server_list;
 public:
-    bool isEmpty();
+    LoadBalancer(int desiredCapacity);
+    void add_web_server(WebServer ws);
+    bool is_empty();
     void handle_request(Request r, int t);
     void assign_request(int t);
 };
