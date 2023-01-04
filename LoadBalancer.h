@@ -1,18 +1,20 @@
 #pragma once
 
 #include "Request.h"
+#include "WebServer.h"
 #include <queue>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
 class LoadBalancer {
 private:
+    int capacity;
     queue<Request> request_queue;
     vector<WebServer> server_list;
-
 public:
     bool isEmpty();
-    void handle_request();
-    void assign_request();
-}
+    void handle_request(Request r, int t);
+    void assign_request(int t);
+};

@@ -1,7 +1,4 @@
 #include "Request.h"
-#include <iostream>
-
-using namespace std;
 
 Request::Request() {
     srand(time(NULL));

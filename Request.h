@@ -9,7 +9,6 @@ private:
     int process_time;
     IPAddress in;
     IPAddress out;
-
 public:
     Request();
     int getTime();
