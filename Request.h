@@ -1,11 +1,12 @@
 #pragma once
 
 #include "IPAddress.h"
-#include <stdlib.h>
+#include <cstdlib>
+#include <ctime>
 
 class Request {
 private:
-    int time;
+    int process_time;
     IPAddress in;
     IPAddress out;
 public:

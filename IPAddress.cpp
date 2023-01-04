@@ -1,6 +1,3 @@
-#include <cstdlib>
-#include <iostream>
-
 #include "IPAddress.h"
 
 int* IPAddress::getParts() {
@@ -18,9 +15,4 @@ IPAddress::IPAddress() {
 std::ostream& operator<<(std::ostream& os, IPAddress& ipa) {
     os << ipa.parts[0] << "." << ipa.parts[1] << "." << ipa.parts[2] << "." << ipa.parts[3];
     return os;
-}
-
-int main() {
-    IPAddress ipa;
-    std::cout << ipa << std::endl;
 }
