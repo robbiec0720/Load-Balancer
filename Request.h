@@ -11,4 +11,5 @@ private:
     IPAddress out;
 public:
     Request();
+    getTime();
 };

@@ -10,3 +10,7 @@ Request::Request() {
     in = IPAddress();
     out = IPAddress();
 }
+
+int Request::getTime() {
+    return process_time;
+}
