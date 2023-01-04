@@ -7,11 +7,12 @@ class WebServer {
         int timeFree;
     public:
         WebServer();
-        void solicitRequest();
+        void solicitRequest(); // NOTE unused so far
 
         // simulates the web server processing a request
         void processRequest(Request r, int currentTime);
 
         // we poll the web server every time cycle from our load balancer
-        void poll(int currentTime);
+        // true if free, else false
+        bool poll(int currentTime);
 };
