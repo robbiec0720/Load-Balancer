@@ -1,3 +1,6 @@
+#include <cstdlib>
+#include <iostream>
+
 #include "IPAddress.h"
 
 int* IPAddress::getParts() {
@@ -5,13 +8,19 @@ int* IPAddress::getParts() {
 }
 
 IPAddress::IPAddress() {
+    srand(time(NULL));
+    int max = 256;
     for(int i = 0; i < 4; i++) {
-        parts[i] = 123; // TODO change this to a random number
+        parts[i] = rand() % max;
     }
 }
 
-// #include <iostream>
-// int main() {
-//     IPAddress ipa;
-//     std::cout << ipa << std::endl;
-// }
+std::ostream& operator<<(std::ostream& os, IPAddress& ipa) {
+    os << ipa.parts[0] << "." << ipa.parts[1] << "." << ipa.parts[2] << "." << ipa.parts[3];
+    return os;
+}
+
+int main() {
+    IPAddress ipa;
+    std::cout << ipa << std::endl;
+}

@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 class IPAddress {
     private:
@@ -6,4 +7,5 @@ class IPAddress {
     public:
         int* getParts();
         IPAddress();
+        friend std::ostream& operator<<(std::ostream& os, IPAddress& ipa);
 };
