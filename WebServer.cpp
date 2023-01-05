@@ -15,7 +15,9 @@ void WebServer::process_request(Request r, int current_time) {
 
 bool WebServer::poll(int current_time) {
     if(current_time >= time_free) {
-        cout << "At " << current_time << " Server " << my_id << " finished processing request from ";// << current_request.get_in() << " to " << current_request.get_out() << endl;
+        if(current_time != 0) {
+            cout << "At " << current_time << " Server " << my_id << " finished processing request from " << current_request.get_in() << " to " << current_request.get_out() << endl;
+        }
         return true;
     }
     return false;

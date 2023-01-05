@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
     int num_webservers = 10;
     int capacity = 200;
     int num_cycles = 10000;
-    int prob_request = 5;
+    int prob_request = 7;
     srand(time(NULL));
 
     while((opt = getopt(argc, argv, "w:c:t:p:")) != -1) {
@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
                 num_cycles = atoi(optarg);
                 break;
             case 'p':
-                prob_request = atoi(optarg);
+                prob_request = atof(optarg) * 2;
         }
     }
 
@@ -44,11 +44,13 @@ int main(int argc, char* argv[]) {
     for(int i = 0; i <= num_cycles; i++) {
         balancer.assign_request(i);
 
-        int n = rand() % 100;
+        int n = rand() % 200;
         if(n < prob_request) {
             balancer.handle_request(Request(), i);
         }
     }
+
+    cout << "\nSummary" << "\nTime Range for Requests: 2-500 cycles" << endl;
     cout << "Starting Queue Size: " << capacity << " Requests" << endl;
     cout << "Ending Queue Size: " << balancer.get_size() << " Requests" << endl;
 }
