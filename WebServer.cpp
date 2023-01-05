@@ -3,7 +3,7 @@
 using namespace std;
 
 /**
- * Constructs a new web server with the given ID.
+ * @brief Constructs a new web server with the given ID.
  *
  * @param[in] id The ID of the web server
  */
@@ -13,7 +13,7 @@ WebServer::WebServer(int id) {
 }
 
 /**
- * Processes a request for the web server.
+ * @brief Processes a request for the web server.
  *
  * @param[in] r The request to be processed
  * @param[in] current_time The current time in the simulation
@@ -26,7 +26,7 @@ void WebServer::process_request(Request r, int current_time) {
 }
 
 /**
- * Polls the web server to check if it is currently free.
+ * @brief Polls the web server to check if it is currently free.
  *
  * @param[in] current_time The current time in the simulation
  * @return True if the web server is free, false otherwise
