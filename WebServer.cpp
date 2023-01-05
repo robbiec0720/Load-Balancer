@@ -5,7 +5,7 @@ WebServer::WebServer() {
 }
 
 void WebServer::processRequest(Request r, int currentTime) {
-    int timeForRequest = r.getTime();
+    int timeForRequest = r.get_time();
     timeFree = currentTime + timeForRequest;
 }
 

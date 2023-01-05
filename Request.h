@@ -11,5 +11,5 @@ private:
     IPAddress out;
 public:
     Request();
-    int getTime();
+    int get_time();
 };

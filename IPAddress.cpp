@@ -5,7 +5,6 @@ int* IPAddress::getParts() {
 }
 
 IPAddress::IPAddress() {
-    srand(time(NULL));
     int max = 256;
     for(int i = 0; i < 4; i++) {
         parts[i] = rand() % max;
