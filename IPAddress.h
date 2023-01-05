@@ -11,7 +11,7 @@
 class IPAddress {
 private:
     /**
-     * @var parts The parts (octets) of the IPv4 address.
+     * @var The parts (octets) of the IPv4 address.
      */
     int parts[4];
 
@@ -21,7 +21,7 @@ public:
      *
      * @return The parts of the IPAddress.
      */
-    int* getParts();
+    int* get_parts();
 
     /**
      * @brief Constructs a new IPAddress.

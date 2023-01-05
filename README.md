@@ -1,3 +1,3 @@
 # Load-Balancer
-A simulation of a large company's load-balancing web requests using a load balancer.
+A simulation of using a load-balancer to handle web requests.
 All Doxygen comments were written using ChatGPT.

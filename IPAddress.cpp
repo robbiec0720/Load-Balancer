@@ -5,7 +5,7 @@
  *
  * @return The parts of the IPAddress.
  */
-int* IPAddress::getParts() {
+int* IPAddress::get_parts() {
     return parts;
 }
 
