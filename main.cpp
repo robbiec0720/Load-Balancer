@@ -51,4 +51,10 @@ int main(int argc, char* argv[]) {
     }
     cout << "Starting Queue Size: " << capacity << " Requests" << endl;
     cout << "Ending Queue Size: " << balancer.get_size() << " Requests" << endl;
+
+    IPAddress ipa;
+    cout << ipa;
+    Request r;
+    cout << r.get_in();
+
 }
