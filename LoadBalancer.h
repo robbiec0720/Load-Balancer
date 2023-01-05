@@ -19,4 +19,5 @@ public:
     bool is_empty();
     void handle_request(Request r, int t);
     void assign_request(int t);
+    int get_size();
 };
