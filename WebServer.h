@@ -4,15 +4,14 @@
 
 class WebServer {
     private:
-        int timeFree;
+        int time_free;
     public:
         WebServer();
-        void solicitRequest(); // NOTE unused so far
 
         // simulates the web server processing a request
-        void processRequest(Request r, int currentTime);
+        void processRequest(Request r, int current_time);
 
         // we poll the web server every time cycle from our load balancer
         // true if free, else false
-        bool poll(int currentTime);
+        bool poll(int current_time);
 };

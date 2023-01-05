@@ -14,7 +14,7 @@ void LoadBalancer::assign_request(int t) {
             //cout << request_queue.front().get_time() << endl;
             request_queue.pop();
             full = false;
-            cout << "Cycle " << t << ": Assigned request to webserver " << (i+1) << "." << endl;
+            //cout << "Cycle " << t << ": Assigned request to webserver " << (i+1) << "." << endl;
         }
     }
     if(full) {
