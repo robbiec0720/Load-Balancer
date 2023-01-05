@@ -8,6 +8,7 @@ WebServer::WebServer(int id) {
 void WebServer::processRequest(Request r, int current_time) {
     int time_for_request = r.get_time();
     time_free = current_time + time_for_request;
+    current_request = r;
 }
 
 bool WebServer::poll(int current_time) {

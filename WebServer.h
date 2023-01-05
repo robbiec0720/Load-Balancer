@@ -6,6 +6,7 @@ class WebServer {
     private:
         int time_free;
         int my_id;
+        Request current_request;
     public:
         WebServer(int id);
 
