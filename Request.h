@@ -12,4 +12,6 @@ private:
 public:
     Request();
     int get_time();
+    IPAddress get_in();
+    IPAddress get_out();
 };

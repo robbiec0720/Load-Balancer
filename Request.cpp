@@ -9,3 +9,11 @@ Request::Request() {
 int Request::get_time() {
     return process_time;
 }
+
+IPAddress Request::get_in() {
+    return in;
+}
+
+IPAddress Request::get_out() {
+    return out;
+}
