@@ -37,3 +37,7 @@ void LoadBalancer::add_web_server(WebServer ws) {
 LoadBalancer::LoadBalancer(int desired_capacity) {
     capacity = desired_capacity;
 }
+
+int LoadBalancer::get_size() {
+    return request_queue.size();
+}
