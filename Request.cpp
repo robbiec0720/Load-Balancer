@@ -2,7 +2,7 @@
 
 Request::Request() {
     srand(time(NULL));
-    process_time = rand() % 5 + 2;
+    process_time = rand() % 499 + 2;
     in = IPAddress();
     out = IPAddress();
 }

@@ -7,15 +7,17 @@ bool LoadBalancer::is_empty() {
 }
 
 void LoadBalancer::assign_request(int t) {
+    bool full = true;
     for(int i = 0; i < server_list.size(); i++) {
         if(server_list[i].poll(t)) {
             server_list[i].processRequest(request_queue.front(), t);
             request_queue.pop();
-            break;
+            full = false;
+            cout << "Cycle " << t << ": Assigned request to webserver " << (i+1) << "." << endl;
         }
-        if(i == server_list.size()-1) {
-            cout << "Cycle " << t << ": All webservers are currently full" << endl;
-        }
+    }
+    if(full) {
+        //cout << "Cycle " << t << ": All webservers are currently full." << endl;
     }
 }
 
@@ -32,6 +34,6 @@ void LoadBalancer::add_web_server(WebServer ws) {
     server_list.push_back(ws);
 }
 
-LoadBalancer::LoadBalancer(int desiredCapacity) {
-    capacity = desiredCapacity;
+LoadBalancer::LoadBalancer(int desired_capacity) {
+    capacity = desired_capacity;
 }

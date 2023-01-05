@@ -43,12 +43,13 @@ int main(int argc, char* argv[]) {
     int cycle = 0;
     while(!balancer.is_empty()) {
         balancer.assign_request(cycle);
+
         srand(time(NULL));
         int n = rand() % 100;
         if(n < prob_request) {
             balancer.handle_request(Request(), cycle);
         }
+        
         cycle++;
-        cout << cycle << endl;
     }
 }
