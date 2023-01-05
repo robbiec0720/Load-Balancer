@@ -5,8 +5,9 @@
 class WebServer {
     private:
         int time_free;
+        int my_id;
     public:
-        WebServer();
+        WebServer(int id);
 
         // simulates the web server processing a request
         void processRequest(Request r, int current_time);

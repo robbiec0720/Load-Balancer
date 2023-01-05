@@ -1,7 +1,8 @@
 #include "WebServer.h"
 
-WebServer::WebServer() {
+WebServer::WebServer(int id) {
     time_free = 0;
+    my_id = id;
 }
 
 void WebServer::processRequest(Request r, int current_time) {

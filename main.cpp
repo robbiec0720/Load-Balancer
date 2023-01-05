@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
 
     LoadBalancer balancer(capacity);
     for(int i = 0; i < num_webservers; i++) {
-        balancer.add_web_server(WebServer());
+        balancer.add_web_server(WebServer(i + 1));
     }
 
     for(int i = 0; i < capacity; i++) {
