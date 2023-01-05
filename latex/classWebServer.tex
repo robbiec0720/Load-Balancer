@@ -1,0 +1,110 @@
+\hypertarget{classWebServer}{}\doxysection{Web\+Server Class Reference}
+\label{classWebServer}\index{WebServer@{WebServer}}
+
+
+A class representing a web server.  
+
+
+
+
+{\ttfamily \#include $<$Web\+Server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWebServer_a5044757cd8574d3f62a7eec5d51fb00f}{Web\+Server}} (int id)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classWebServer}{Web\+Server}} with the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebServer_a2151c7d8c7a600ba14b03708bdce9f2b}{process\+\_\+request}} (\mbox{\hyperlink{classRequest}{Request}} r, int current\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Processes a request on the server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWebServer_a24dbe0cc92f3de94892540a5a088fa73}{poll}} (int current\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Returns true if the server is free at the given time, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a web server. 
+
+This class stores the current state of the web server and provides methods for processing requests and checking the status of the server. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWebServer_a5044757cd8574d3f62a7eec5d51fb00f}\label{classWebServer_a5044757cd8574d3f62a7eec5d51fb00f}} 
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{WebServer()}{WebServer()}}
+{\footnotesize\ttfamily Web\+Server\+::\+Web\+Server (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classWebServer}{Web\+Server}} with the given ID. 
+
+Constructs a new web server with the given ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em id} & The ID of the server.\\
+\hline
+\mbox{\texttt{ in}}  & {\em id} & The ID of the web server \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebServer_a24dbe0cc92f3de94892540a5a088fa73}\label{classWebServer_a24dbe0cc92f3de94892540a5a088fa73}} 
+\index{WebServer@{WebServer}!poll@{poll}}
+\index{poll@{poll}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily bool Web\+Server\+::poll (\begin{DoxyParamCaption}\item[{int}]{current\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Returns true if the server is free at the given time, false otherwise. 
+
+Polls the web server to check if it is currently free.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+time} & The current time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the server is free at the given time, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em current\+\_\+time} & The current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the web server is free, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebServer_a2151c7d8c7a600ba14b03708bdce9f2b}\label{classWebServer_a2151c7d8c7a600ba14b03708bdce9f2b}} 
+\index{WebServer@{WebServer}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{process\_request()}{process\_request()}}
+{\footnotesize\ttfamily void Web\+Server\+::process\+\_\+request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRequest}{Request}}}]{r,  }\item[{int}]{current\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Processes a request on the server. 
+
+Processes a request for the web server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em r} & The request to process. \\
+\hline
+ & {\em current\+\_\+time} & The current time.\\
+\hline
+\mbox{\texttt{ in}}  & {\em r} & The request to be processed \\
+\hline
+\mbox{\texttt{ in}}  & {\em current\+\_\+time} & The current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classRequest_a55004bd533fc4b97ec5972f5204f4c89}{Request\+::get\+\_\+time()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Web\+Server.\+h\item 
+Web\+Server.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{classLoadBalancer}{}\doxysection{Load\+Balancer Class Reference}
+\label{classLoadBalancer}\index{LoadBalancer@{LoadBalancer}}
+
+
+A class representing a load balancer.  
+
+
+
+
+{\ttfamily \#include $<$Load\+Balancer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLoadBalancer_a3d6a63cbe6c2abd00559d379e9ee6907}{Load\+Balancer}} (int desired\+Capacity)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}} with the given capacity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadBalancer_a51b303743946e3c7a0fd7aca2d973c5b}{add\+\_\+web\+\_\+server}} (\mbox{\hyperlink{classWebServer}{Web\+Server}} ws)
+\begin{DoxyCompactList}\small\item\em Adds a web server to the load balancer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLoadBalancer_ae8c3fd78938b872bf7809290247fab72}{is\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the request queue is empty, false otherwise. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadBalancer_a1a27892598239482308bb8e436ff869e}{handle\+\_\+request}} (\mbox{\hyperlink{classRequest}{Request}} r, int t)
+\begin{DoxyCompactList}\small\item\em Handles a request by adding it to the request queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadBalancer_a95fc0879575e8fe6344b5fe1fa55ddbe}{assign\+\_\+request}} (int t)
+\begin{DoxyCompactList}\small\item\em Assigns a request from the request queue to a server. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLoadBalancer_a025695ed4fe7dd1c57369e5a3383fc27}{get\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of servers managed by the load balancer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a load balancer. 
+
+This class stores a list of web servers and a queue of requests, and provides methods for adding servers, handling requests, and assigning requests to servers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoadBalancer_a3d6a63cbe6c2abd00559d379e9ee6907}\label{classLoadBalancer_a3d6a63cbe6c2abd00559d379e9ee6907}} 
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{LoadBalancer()}{LoadBalancer()}}
+{\footnotesize\ttfamily Load\+Balancer\+::\+Load\+Balancer (\begin{DoxyParamCaption}\item[{int}]{desired\+\_\+capacity }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}} with the given capacity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em desired\+Capacity} & The maximum number of servers the load balancer can manage.\\
+\hline
+{\em desired\+\_\+capacity} & The maximum number of servers the load balancer can manage. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoadBalancer_a51b303743946e3c7a0fd7aca2d973c5b}\label{classLoadBalancer_a51b303743946e3c7a0fd7aca2d973c5b}} 
+\index{LoadBalancer@{LoadBalancer}!add\_web\_server@{add\_web\_server}}
+\index{add\_web\_server@{add\_web\_server}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{add\_web\_server()}{add\_web\_server()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::add\+\_\+web\+\_\+server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWebServer}{Web\+Server}}}]{ws }\end{DoxyParamCaption})}
+
+
+
+Adds a web server to the load balancer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ws} & The web server to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoadBalancer_a95fc0879575e8fe6344b5fe1fa55ddbe}\label{classLoadBalancer_a95fc0879575e8fe6344b5fe1fa55ddbe}} 
+\index{LoadBalancer@{LoadBalancer}!assign\_request@{assign\_request}}
+\index{assign\_request@{assign\_request}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{assign\_request()}{assign\_request()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::assign\+\_\+request (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Assigns a request from the request queue to a server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The current time.\\
+\hline
+\end{DoxyParams}
+If no server is available, the request is discarded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The current time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoadBalancer_a025695ed4fe7dd1c57369e5a3383fc27}\label{classLoadBalancer_a025695ed4fe7dd1c57369e5a3383fc27}} 
+\index{LoadBalancer@{LoadBalancer}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily int Load\+Balancer\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of servers managed by the load balancer. 
+
+\begin{DoxyReturn}{Returns}
+The number of servers managed by the load balancer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadBalancer_a1a27892598239482308bb8e436ff869e}\label{classLoadBalancer_a1a27892598239482308bb8e436ff869e}} 
+\index{LoadBalancer@{LoadBalancer}!handle\_request@{handle\_request}}
+\index{handle\_request@{handle\_request}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{handle\_request()}{handle\_request()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::handle\+\_\+request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRequest}{Request}}}]{r,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Handles a request by adding it to the request queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The request to handle. \\
+\hline
+{\em t} & The current time.\\
+\hline
+\end{DoxyParams}
+If the request queue is full, the request is discarded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The request to handle. \\
+\hline
+{\em t} & The current time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoadBalancer_ae8c3fd78938b872bf7809290247fab72}\label{classLoadBalancer_ae8c3fd78938b872bf7809290247fab72}} 
+\index{LoadBalancer@{LoadBalancer}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily bool Load\+Balancer\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the request queue is empty, false otherwise. 
+
+\begin{DoxyReturn}{Returns}
+True if the request queue is empty, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Load\+Balancer.\+h\item 
+Load\+Balancer.\+cpp\end{DoxyCompactItemize}

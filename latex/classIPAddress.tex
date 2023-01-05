@@ -1,0 +1,86 @@
+\hypertarget{classIPAddress}{}\doxysection{I\+P\+Address Class Reference}
+\label{classIPAddress}\index{IPAddress@{IPAddress}}
+
+
+A class representing an I\+Pv4 address.  
+
+
+
+
+{\ttfamily \#include $<$I\+P\+Address.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{classIPAddress_ace13305873acc761706be69ae0ae1c9e}{get\+Parts}} ()
+\begin{DoxyCompactList}\small\item\em Returns the parts of the \mbox{\hyperlink{classIPAddress}{I\+P\+Address}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIPAddress_a6089825af3b03060f80282d0dcca1582}{I\+P\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classIPAddress}{I\+P\+Address}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classIPAddress_a55db5e391671b6570002111b9b214160}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} \&ipa)
+\begin{DoxyCompactList}\small\item\em Outputs the \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} to an output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing an I\+Pv4 address. 
+
+This class stores the parts of an I\+Pv4 address (the octets) and provides methods for working with the address. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIPAddress_a6089825af3b03060f80282d0dcca1582}\label{classIPAddress_a6089825af3b03060f80282d0dcca1582}} 
+\index{IPAddress@{IPAddress}!IPAddress@{IPAddress}}
+\index{IPAddress@{IPAddress}!IPAddress@{IPAddress}}
+\doxysubsubsection{\texorpdfstring{IPAddress()}{IPAddress()}}
+{\footnotesize\ttfamily I\+P\+Address\+::\+I\+P\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classIPAddress}{I\+P\+Address}}. 
+
+The parts of the \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} are initialized to random values between 0 and 255. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIPAddress_ace13305873acc761706be69ae0ae1c9e}\label{classIPAddress_ace13305873acc761706be69ae0ae1c9e}} 
+\index{IPAddress@{IPAddress}!getParts@{getParts}}
+\index{getParts@{getParts}!IPAddress@{IPAddress}}
+\doxysubsubsection{\texorpdfstring{getParts()}{getParts()}}
+{\footnotesize\ttfamily int $\ast$ I\+P\+Address\+::get\+Parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the parts of the \mbox{\hyperlink{classIPAddress}{I\+P\+Address}}. 
+
+\begin{DoxyReturn}{Returns}
+The parts of the \mbox{\hyperlink{classIPAddress}{I\+P\+Address}}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classIPAddress_a55db5e391671b6570002111b9b214160}\label{classIPAddress_a55db5e391671b6570002111b9b214160}} 
+\index{IPAddress@{IPAddress}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!IPAddress@{IPAddress}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{classIPAddress}{I\+P\+Address}} \&}]{ipa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Outputs the \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} to an output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em ipa} & The \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+I\+P\+Address.\+h\item 
+I\+P\+Address.\+cpp\end{DoxyCompactItemize}

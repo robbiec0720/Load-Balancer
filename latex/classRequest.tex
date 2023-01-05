@@ -1,0 +1,88 @@
+\hypertarget{classRequest}{}\doxysection{Request Class Reference}
+\label{classRequest}\index{Request@{Request}}
+
+
+A class representing a request.  
+
+
+
+
+{\ttfamily \#include $<$Request.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRequest_afaf8d8928de7ffff8a3767589489bd33}{Request}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classRequest}{Request}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRequest_a55004bd533fc4b97ec5972f5204f4c89}{get\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Returns the processing time of the request. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIPAddress}{I\+P\+Address}} \& \mbox{\hyperlink{classRequest_a4064270cd4fed626fc5d529e00e3f8fe}{get\+\_\+in}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the source address of the request. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIPAddress}{I\+P\+Address}} \& \mbox{\hyperlink{classRequest_a6e4a70882fa8d69a8f0298e560415b6d}{get\+\_\+out}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the destination address of the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a request. 
+
+This class stores the processing time and source and destination addresses of a request. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRequest_afaf8d8928de7ffff8a3767589489bd33}\label{classRequest_afaf8d8928de7ffff8a3767589489bd33}} 
+\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily Request\+::\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classRequest}{Request}}. 
+
+The processing time, source address, and destination address are initialized to random values. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRequest_a4064270cd4fed626fc5d529e00e3f8fe}\label{classRequest_a4064270cd4fed626fc5d529e00e3f8fe}} 
+\index{Request@{Request}!get\_in@{get\_in}}
+\index{get\_in@{get\_in}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{get\_in()}{get\_in()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} \& Request\+::get\+\_\+in (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the source address of the request. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the source address of the request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRequest_a6e4a70882fa8d69a8f0298e560415b6d}\label{classRequest_a6e4a70882fa8d69a8f0298e560415b6d}} 
+\index{Request@{Request}!get\_out@{get\_out}}
+\index{get\_out@{get\_out}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{get\_out()}{get\_out()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIPAddress}{I\+P\+Address}} \& Request\+::get\+\_\+out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the destination address of the request. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the destination address of the request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRequest_a55004bd533fc4b97ec5972f5204f4c89}\label{classRequest_a55004bd533fc4b97ec5972f5204f4c89}} 
+\index{Request@{Request}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{get\_time()}{get\_time()}}
+{\footnotesize\ttfamily int Request\+::get\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the processing time of the request. 
+
+\begin{DoxyReturn}{Returns}
+The processing time of the request. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Request.\+h\item 
+Request.\+cpp\end{DoxyCompactItemize}
